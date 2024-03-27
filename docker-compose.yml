@@ -1,0 +1,47 @@
+# Copyright (c) 2024 Semillero de Investigación en Recursos Educativos Digitales Abiertos
+version: '3'
+services:
+  # Imagen de Apache, este es nuestro servidor web
+  web:
+    container_name: web
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./:/var/www:rw
+    networks:
+      - app
+    ports:
+      - 80:80
+      - 443:443
+  # Imagen de base de datos. Esta es nuestra base de datos.
+  db:
+    container_name: db
+    image: mariadb:lts
+    env_file:
+      - .env
+    networks:
+      - app
+    volumes:
+      - dbvolume:/var/lib/mysql:rw
+    ports:
+      - 3306:3306
+  # Imagen de visor de base de datos.
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin:5.2.1-fpm-alpine
+    environment:
+      - PMA_ARBITRARY: 1
+      - PMA_HOST: db
+    networks:
+      - app
+    ports:
+      - 8080:80
+
+# Nuestro volumen para base de datos.
+volumes:
+  dbvolume:
+
+# Nuestra red. Esto permite que las imágenes puedan verse entre si.
+networks:
+  app:
