@@ -17,3 +17,4 @@ La empresa "Mascotas del Pacífico S.A.S" requiere un PoS (point of sale) que le
         * Cantidad
         * Costo
 3. Generar una página que permita ver las estadísticas de la cantidad de ventas realizadas en la semana, y el total de la semana.
+4. Enviar un correo electrónico con la información de la compra al cliente.

@@ -1,25 +1,26 @@
 # Copyright (c) 2024 Semillero de Investigación en Recursos Educativos Digitales Abiertos
-version: '3'
+version: '3.7'
 services:
   # Imagen de Apache, este es nuestro servidor web
   web:
+    image: afestupinanp/taller-unad-sireda:latest
     container_name: web
     build: .
-    env_file:
-      - .env
     volumes:
-      - ./:/var/www:rw
+      - ./src:/var/www:rw
     networks:
       - app
     ports:
       - 80:80
       - 443:443
+    depends_on:
+      - db
   # Imagen de base de datos. Esta es nuestra base de datos.
   db:
     container_name: db
     image: mariadb:lts
     env_file:
-      - .env
+      - src/.env
     networks:
       - app
     volumes:
@@ -29,14 +30,17 @@ services:
   # Imagen de visor de base de datos.
   phpmyadmin:
     container_name: phpmyadmin
-    image: phpmyadmin:5.2.1-fpm-alpine
+    image: phpmyadmin:5.2.1-apache
     environment:
-      - PMA_ARBITRARY: 1
-      - PMA_HOST: db
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
     networks:
       - app
     ports:
       - 8080:80
+    depends_on:
+      - db
 
 # Nuestro volumen para base de datos.
 volumes:

@@ -7,3 +7,4 @@ En este segundo taller, trabajarás sobre el proyecto anteriormente elaborado en
 * Crea reglas de validación usando requests sobre las funciones de crear, editar y actualizar de los controladores anteriormente desarrollados.
 * Crea una función en el modelo de producto que nos permita obtener las ventas relacionadas usando las relaciones del Eloquent ORM de Laravel.
 * Crea una función en el modelo de ventas que nos permita obtener el producto.
+* Genera estadísticas en la página principal de las ventas del día y de la semana.
