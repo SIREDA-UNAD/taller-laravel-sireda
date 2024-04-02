@@ -1,68 +1,101 @@
-<mxfile host="app.diagrams.net" modified="2024-03-27T01:32:36.404Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="6aqeA7LkTy_PC49_tCkz" version="24.0.7" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-02T01:57:27.436Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36  " etag="Y8X5k99PyRYmx2ONI7lZ" version="24.2.0" type="device">
   <diagram name="Page-1" id="gOJ8c_vwQbRTvhBccCO3">
-    <mxGraphModel dx="1600" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1318" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="OD95pm2_sAWr1kyd48rz-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-1" target="OD95pm2_sAWr1kyd48rz-2">
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-1" target="OD95pm2_sAWr1kyd48rz-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-1" value="Cajero crea una venta" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="OD95pm2_sAWr1kyd48rz-1" value="Usuario crea un post" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="330" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-2" target="OD95pm2_sAWr1kyd48rz-4">
+        <mxCell id="OD95pm2_sAWr1kyd48rz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OD95pm2_sAWr1kyd48rz-4" target="OD95pm2_sAWr1kyd48rz-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-2" value="Se obtiene el correo del cliente" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-4" target="OD95pm2_sAWr1kyd48rz-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-14" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OD95pm2_sAWr1kyd48rz-7">
+        <mxCell id="OD95pm2_sAWr1kyd48rz-14" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OD95pm2_sAWr1kyd48rz-7" vertex="1" connectable="0">
           <mxGeometry x="-0.3412" y="-4" relative="1" as="geometry">
             <mxPoint x="7" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-4" target="OD95pm2_sAWr1kyd48rz-10">
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-4" target="BaZNw0LG2MF5-_w1osHr-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-15" value="Si" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OD95pm2_sAWr1kyd48rz-11">
-          <mxGeometry x="-0.4286" y="5" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-24" value="Si" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BaZNw0LG2MF5-_w1osHr-2">
+          <mxGeometry x="-0.6092" y="1" relative="1" as="geometry">
+            <mxPoint x="9" y="8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-4" value="¿El envío de correos está habilitado?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="325" y="420" width="130" height="110" as="geometry" />
+        <mxCell id="OD95pm2_sAWr1kyd48rz-4" value="¿El envío de correos está habilitado en la configuración?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="301.37" y="310" width="177.27" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-6" value="No realizar ninguna acción" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="540" y="445" width="120" height="60" as="geometry" />
+        <mxCell id="OD95pm2_sAWr1kyd48rz-6" value="No realizar ninguna acción" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="355" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-10" target="OD95pm2_sAWr1kyd48rz-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-13" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OD95pm2_sAWr1kyd48rz-12">
-          <mxGeometry x="-0.4508" y="4" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="OD95pm2_sAWr1kyd48rz-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="OD95pm2_sAWr1kyd48rz-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="960" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-10" target="OD95pm2_sAWr1kyd48rz-16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-10" value="¿Es un correo bien formado?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="325" y="600" width="130" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OD95pm2_sAWr1kyd48rz-16" target="OD95pm2_sAWr1kyd48rz-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-16" value="Realizar envío del correo" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="330" y="790" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-18" value="El correo contiene información de la venta realizada" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="530" y="790" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OD95pm2_sAWr1kyd48rz-20" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Flujo de envío de correo&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="OD95pm2_sAWr1kyd48rz-20" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Flujo de envío de correo&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="210" y="30" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-1" target="BaZNw0LG2MF5-_w1osHr-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-1" value="Se obtienen todos los correos habilitados para notificar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-7" target="BaZNw0LG2MF5-_w1osHr-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-7" value="Para cada correo..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-9" target="BaZNw0LG2MF5-_w1osHr-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-9" value="¿Es un correo bien formado?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="780" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-11" target="BaZNw0LG2MF5-_w1osHr-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-11" value="Guardar en listado de correos" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-15" target="BaZNw0LG2MF5-_w1osHr-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="1180" />
+              <mxPoint x="560" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-22" value="Si" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BaZNw0LG2MF5-_w1osHr-17">
+          <mxGeometry x="-0.7679" y="2" relative="1" as="geometry">
+            <mxPoint x="-5" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-15" target="BaZNw0LG2MF5-_w1osHr-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-23" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BaZNw0LG2MF5-_w1osHr-19">
+          <mxGeometry x="-0.2286" y="1" relative="1" as="geometry">
+            <mxPoint x="9" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-15" value="¿Existe otro correo?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1120" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-18" target="BaZNw0LG2MF5-_w1osHr-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-18" value="Enviar correo mediante CC al listado creado" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-20" value="Fin" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1470" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

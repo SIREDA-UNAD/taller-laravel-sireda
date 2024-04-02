@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" modified="2024-04-02T02:08:28.667Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36  " etag="sFRo5_b0PqLyGe2vlaPD" version="24.2.0" type="device">
+  <diagram name="Page-1" id="gOJ8c_vwQbRTvhBccCO3">
+    <mxGraphModel dx="1067" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OD95pm2_sAWr1kyd48rz-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="OD95pm2_sAWr1kyd48rz-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="960" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OD95pm2_sAWr1kyd48rz-20" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Flujo de visita de post&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="210" y="30" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-25" target="BaZNw0LG2MF5-_w1osHr-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-25" value="Usuario visitante ingresa a un post" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-26" target="BaZNw0LG2MF5-_w1osHr-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-26" value="Se emite un evento desde el controlador" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-28" target="BaZNw0LG2MF5-_w1osHr-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-28" value="El evento es capturado por un event handler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-30" target="BaZNw0LG2MF5-_w1osHr-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-30" value="Se obtiene la información del post al que ingresó el visitante" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-34" value="Se incrementa el valor y se actualiza el post" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-36" target="BaZNw0LG2MF5-_w1osHr-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-36" value="Guardar en caché el tiempo de la última visita" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-38" target="BaZNw0LG2MF5-_w1osHr-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BaZNw0LG2MF5-_w1osHr-38" target="BaZNw0LG2MF5-_w1osHr-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-38" value="¿Ha pasado 30 segundos?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="390" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-42" value="No realizar ninguna acción" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BaZNw0LG2MF5-_w1osHr-44" value="Consejo: ¡Usa la caché de Laravel! Cache::put(); y Cache::get();" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="298" width="370" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
