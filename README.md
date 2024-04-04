@@ -9,7 +9,7 @@ Se recomienda encarecidamente ver los talleres relacionados a la Programación O
 
 ### ¿Qué encontrarás en este repositorio?
 
-En la carpeta docs, encontrarás los archivos Markdown que contendrán la información relacionada al taller que se está realizando, así como las instrucciones para alcanzar tus objetivos.
+En la carpeta docs, encontrarás los archivos Markdown que contendrán la información relacionada al taller que se está realizando, así como las instrucciones para alcanzar tus objetivos. Requiere también que te fundamentes en la documentación de Laravel, la cual puedes encontrar en https://laravel.com/docs/10.x
 
 | taller-1                                                                                                                          | taller-2                                                                        | taller-3                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
