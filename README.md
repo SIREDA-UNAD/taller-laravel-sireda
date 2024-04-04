@@ -3,6 +3,10 @@
 
 El propósito de este taller es complementar los conocimientos adquiridos en la serie de talleres de programación orientada a objetos con una introducción al desarrollo web por medio del framework Laravel. Sientete libre de clonar este repositorio.
 
+## Antes de continuar...
+
+Se recomienda encarecidamente ver los talleres relacionados a la Programación Orientada a Objetos de PHP dados por Mario Rincón. Puedes encontrar el repositorio del taller aquí: https://github.com/SIREDA-UNAD/TallerIntro
+
 ### ¿Qué encontrarás en este repositorio?
 
 En la carpeta docs, encontrarás los archivos Markdown que contendrán la información relacionada al taller que se está realizando, así como las instrucciones para alcanzar tus objetivos.
