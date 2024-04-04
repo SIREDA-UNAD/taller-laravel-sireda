@@ -1,7 +1,7 @@
 # Taller de Laravel
 ## Semillero de Investigación en Recursos Educativos Digitales Abiertos
 
-El propósito de este taller es complementar los conocimientos adquiridos en la serie de talleres de programación orientada a objetos con una introducción al desarrollo web por medio del framework Laravel. Sientete libre de clonar este repositorio
+El propósito de este taller es complementar los conocimientos adquiridos en la serie de talleres de programación orientada a objetos con una introducción al desarrollo web por medio del framework Laravel. Sientete libre de clonar este repositorio.
 
 ### ¿Qué encontrarás en este repositorio?
 
@@ -15,12 +15,20 @@ También, si usas Visual Studio Code, tendrás las extensiones recomendadas para
 
 ### Instrucciones de instalación
 
-También puedes descargar un servidor web con todo integrado, con XAMPP (https://www.apachefriends.org/es/download.html), es posible tener todos los elementos requeridos para poder realizar los talleres.
+#### XAMPP
+
+Puedes descargar un servidor web con todo integrado, con XAMPP (https://www.apachefriends.org/es/download.html), es posible tener todos los elementos requeridos para poder realizar los talleres. Este paquete ya contiene:
+* Un servidor Apache.
+* MariaDB
+* Lenguaje de programación PHP.
+* Lenguaje de programación Perl.
 
 Adicionalmente, es necesario descargar Composer, el cual puedes descargar del siguiente sitio
 * Windows: https://getcomposer.org/doc/00-intro.md#installation-windows
 * Linux y macOS: https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos (Se requiere realizar la instalación con PHP)
 
+
+#### Docker
 
 Alternativamente puedes usar el docker-compose.yml y el Dockerfile proveídos en el repositorio para arrancar un entorno de desarrollo con todo configurado.
 
