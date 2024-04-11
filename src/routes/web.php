@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuario.listado');
+Route::post('/usuarios', [UsuarioController::class, 'store'])->name('usuario.crear');
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
