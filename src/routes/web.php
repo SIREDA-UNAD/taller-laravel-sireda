@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuario.listado');
-Route::post('/usuarios', [UsuarioController::class, 'store'])->name('usuario.crear');
+// Creamos un grupo de rutas de usuarios. Se debe de haber autenticado para ingresar.
+Route::group(['prefix' => '/usuarios', 'as' => 'usuario.', 'middleware' => ['auth', 'usuarios']], function () {
+    // Ruta de listado de usuarios.
+    Route::get('/', [UsuarioController::class, 'index'])->name('listado');
+    // Ruta de creación de usuarios, por POST.
+    Route::post('/', [UsuarioController::class, 'store'])->name('crear');
+    // Ruta de visualización de editar usuarios.
+    Route::get('/{usuario}/editar', [UsuarioController::class, 'edit'])->name('editar');
+    // Ruta de actualización de datos de usuarios.
+    Route::patch('/{usuario}/editar', [UsuarioController::class, 'update'])->name('actualizar');
+});
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+// Rutas de autenticación de la aplicación. Requerimos de estas para poder ingresar a nuestra aplicación de manera
+// normal.
+Route::get('/login', [LoginController::class, 'loginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login'])->name('login.auth');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+// Redirigimos todas las peticiones a / para el login.
+Route::redirect('/', '/login');

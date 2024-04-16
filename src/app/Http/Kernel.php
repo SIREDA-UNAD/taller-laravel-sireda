@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\UsuarioMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -63,5 +64,9 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+
+        // Nuestro middleware de validación de usuarios. Esto permite que se valide de manera genérica varias rutas.
+        // Aquí lo mapeamos a un alias de 'usuarios'.
+        'usuarios' => UsuarioMiddleware::class
     ];
 }
