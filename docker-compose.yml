@@ -13,6 +13,7 @@ services:
     ports:
       - 80:80
       - 443:443
+      - 5173:5173
     depends_on:
       - db
   # Imagen de base de datos. Esta es nuestra base de datos.

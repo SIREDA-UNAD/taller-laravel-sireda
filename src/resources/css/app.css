@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+main {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+table td, table th {
+    border: 1px solid black;
+}
+
+table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #F3FAFF;
+}
+table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+table th {
+    background-color: rgb(247, 247, 247);
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(130, 215, 255);
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar div {
+    flex: 1;
+}
+
+.navbar p {
+    margin: 0px;
+}
+
+form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type='text'], form input[type='password'], form input[type='email'] {
+    padding: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    background-color: rgb(238, 238, 238);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row {
+    flex-grow: 1;
+}
+
+.checkbox {
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+button, a.button {
+    border: 1px solid rgb(130, 215, 255);
+    background-color: transparent;
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover, a.button:hover {
+    background-color: rgb(130, 215, 255);
+    color: #000;
+    cursor: pointer;
+}

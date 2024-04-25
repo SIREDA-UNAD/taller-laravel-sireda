@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +27,22 @@ Route::group(['prefix' => '/usuarios', 'as' => 'usuario.', 'middleware' => ['aut
     // Ruta de actualización de datos de usuarios.
     Route::patch('/{usuario}/editar', [UsuarioController::class, 'update'])->name('actualizar');
 });
+
+// Creamos un grupo de rutas de posts. Se debe de haber autenticado para ingresar.
+Route::group(['prefix' => '/posts', 'as' => 'post.', 'middleware' => ['auth', 'posts']], function () {
+    // Ruta de listado de posts.
+    Route::get('/', [PostController::class, 'index'])->name('listado');
+    // Ruta de creación de posts, por POST.
+    Route::post('/', [PostController::class, 'store'])->name('crear');
+    // Ruta de visualización de editar posts.
+    Route::get('/{post}/editar', [PostController::class, 'edit'])->name('editar');
+    // Ruta para visualizar un post.
+    Route::get('/{post}/ver', [PostController::class, 'show'])->name('ver')->withoutMiddleware(['auth', 'posts']);
+    // Ruta de actualización de datos de posts.
+    Route::patch('/{post}/editar', [PostController::class, 'update'])->name('actualizar');
+});
+
+Route::view('/inicio', 'index')->name('inicio');
 
 Route::get('/welcome', function () {
     return view('welcome');

@@ -16,6 +16,7 @@ class Usuario extends Authenticatable
         'correo',
         'puede_postear',
         'puede_crear_usuarios',
+        'recibe_notificaciones',
         'clave'
     ];
 

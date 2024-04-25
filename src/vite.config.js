@@ -8,4 +8,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    // Si no utlizas Docker, puedes cambiar por localhost o ::1
+    server: {
+        host: '0.0.0.0'
+    }
 });

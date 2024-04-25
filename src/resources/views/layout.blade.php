@@ -8,19 +8,22 @@
             @yield('title')
         </title>
 
-        <style>
-            body {
-                margin: 0;
-                font-family: system-ui;
-            }
-        </style>
-
+        @vite(['resources/css/app.css'])
     </head>
     <body>
         @if(auth()->check())
-            <p>Autenticado como {{auth()->user()->nombre}}</p>
-            <a href="{{route('logout')}}">Cerrar sesión</a>
+            <div class="navbar">
+                <div class="rutas">
+                    <a href="{{route('inicio')}}">Inicio</a>
+                    <a href="{{route('logout')}}">Cerrar sesión</a>
+                </div>
+                <div class="panel">
+                    <p>Autenticado como {{auth()->user()->nombre}}</p>
+                </div>
+            </div>
         @endif
-        @yield('content')
+        <main>
+            @yield('content')
+        </main>
     </body>
 </html>

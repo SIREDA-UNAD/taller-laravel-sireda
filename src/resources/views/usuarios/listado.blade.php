@@ -13,6 +13,7 @@
                 <th>Correo</th>
                 <th>Puede postear</th>
                 <th>Puede crear usuarios</th>
+                <th>Recibe notificaciones</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -24,8 +25,9 @@
                     <td>{{$usuario->correo}}</td>
                     <td>{{$usuario->puede_postear == 1 ? 'Si' : 'No'}}</td>
                     <td>{{$usuario->puede_crear_usuarios == 1 ? 'Si' : 'No'}}</td>
+                    <td>{{$usuario->recibe_notificaciones == 1 ? 'Si' : 'No'}}</td>
                     <td>
-                        <a href="{{route('usuario.editar', ['usuario' => $usuario->id])}}">Editar</a>
+                        <a class="button" href="{{route('usuario.editar', ['usuario' => $usuario->id])}}">Editar</a>
                     </td>
                 </tr>
             @endforeach

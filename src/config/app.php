@@ -212,4 +212,5 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
+    'MAIL_DEBUG_ALWAYS_TO' => env('MAIL_DEBUG_ALWAYS_TO')
 ];

@@ -22,11 +22,11 @@ class UsuarioMiddleware
         // Este permiso lo usamos para validar toda la sección de gestión de usuarios.
 
         // La función auth()->user() retorna el modelo de usuario de la sesión actual.
-        if (auth()->user()->puede_crear_usuarios) {
+        if (auth()->check() && auth()->user()->puede_crear_usuarios) {
             return $next($request);
         }
 
-        // Si no tiene permisos, lo redirigimos a una página de 403.
-        return abort(403, 'Forbidden');
+        // Si no tiene permisos, lo redirigimos a una página de 401.
+        return abort(401, 'Unauthenticated');
     }
 }
