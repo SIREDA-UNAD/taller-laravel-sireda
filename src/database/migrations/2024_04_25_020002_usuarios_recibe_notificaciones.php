@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('usuarios', function (Blueprint $table) {
-            $table->tinyInteger('recibe_notificaciones')->default(0);
+            $table->tinyInteger('recibe_notificaciones')->default(0)->index('recibe_notificaciones_idx');
         });
     }
 
@@ -21,6 +21,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::table('usuarios', function (Blueprint $table) {
+            $table->dropIndex('recibe_notificaciones_idx');
+            $table->dropColumn('recibe_notificaciones');
+        });
     }
 };

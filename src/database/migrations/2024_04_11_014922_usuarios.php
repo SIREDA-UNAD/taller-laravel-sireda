@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
             $table->string('nombre', 128);
-            $table->string('correo', 128);
-            $table->tinyInteger('puede_postear')->default(0);
-            $table->tinyInteger('puede_crear_usuarios')->default(0);
+            $table->string('correo', 128)->unique();
+            $table->tinyInteger('puede_postear')->default(0)->index();
+            $table->tinyInteger('puede_crear_usuarios')->default(0)->index();
             $table->string('clave', 128);
             $table->timestamps();
         });
