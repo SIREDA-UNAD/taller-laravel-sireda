@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
-use App\Models\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -48,8 +46,7 @@ class LoginController extends Controller
         }
 
         // Si la autenticación falla, lo redirigimos al login.
-        // TODO: agregar errores que permitan notificar al usuario que se autenticó de manera incorrecta.
-        return redirect()->route('login');
+        return redirect()->route('login')->withErrors(['correo' => 'Las credenciales son incorrectas.']);
     }
 
     /**

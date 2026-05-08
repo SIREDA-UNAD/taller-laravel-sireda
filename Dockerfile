@@ -23,7 +23,7 @@ RUN curl -sSLf \
         -o /usr/local/bin/install-php-extensions \
         https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions && \
     chmod +x /usr/local/bin/install-php-extensions
-RUN install-php-extensions zip xml mysqli gd iconv pdo_mysql
+RUN install-php-extensions zip xml mysqli gd iconv pdo_mysql xdebug
 
 # Instalamos Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -53,7 +53,7 @@ RUN apt update && apt install -y --no-install-recommends \
 # Copiar las extensiones PHP del builder
 COPY --from=builder /usr/local/bin/install-php-extensions /usr/local/bin/install-php-extensions
 RUN chmod +x /usr/local/bin/install-php-extensions && \
-    install-php-extensions zip xml mysqli gd iconv pdo_mysql
+    install-php-extensions zip xml mysqli gd iconv pdo_mysql xdebug
 
 # Copiar Composer y Node desde el builder
 COPY --from=builder /usr/local/bin/composer /usr/local/bin/composer
@@ -83,6 +83,16 @@ RUN chmod +x /tmp/* && \
 
 # Limpiar cache de apt
 RUN apt clean && apt autoremove -y
+
+# Configurar XDebug
+RUN echo "zend_extension=xdebug\n\
+xdebug.mode=debug\n\
+xdebug.start_with_request=yes\n\
+xdebug.discover_client_host=true\n\
+xdebug.client_host=host.docker.internal\n\
+xdebug.client_port=9003\n\
+xdebug.log=/var/log/xdebug.log\n\
+xdebug.log_level=0" > /usr/local/etc/php/conf.d/xdebug.ini
 
 # Cambiar el directorio de trabajo a /var/www
 WORKDIR /var/www
