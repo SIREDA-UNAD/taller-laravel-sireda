@@ -2,9 +2,13 @@
 
 namespace App\Providers;
 
+use App\Events\CategoriaNuevaEvent;
 use App\Events\NuevoPost;
+use App\Listeners\CategoraNuevaListener;
 use App\Listeners\NuevoPostListener;
+use App\Models\Categoria;
 use App\Models\Post;
+use App\Observers\CategoriaObserver;
 use App\Observers\PostObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -19,11 +23,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array<class-string, array<int, class-string>>
      */
     protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
-        ],
-        NuevoPost::class => [
-            NuevoPostListener::class
+        CategoriaNuevaEvent::class => [
+            CategoraNuevaListener::class
         ]
     ];
 
@@ -33,6 +34,7 @@ class EventServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Post::observe(PostObserver::class);
+        Categoria::observe(CategoriaObserver::class);
     }
 
     /**

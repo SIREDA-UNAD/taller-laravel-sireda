@@ -195,6 +195,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Resend\Laravel\ResendServiceProvider::class,
+
     ],
 
     /*
@@ -212,5 +214,6 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
-    'MAIL_DEBUG_ALWAYS_TO' => env('MAIL_DEBUG_ALWAYS_TO')
+    'MAIL_DEBUG_ALWAYS_TO' => env('MAIL_DEBUG_ALWAYS_TO'),
+    'miconfig' => '123'
 ];

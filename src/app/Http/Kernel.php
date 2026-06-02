@@ -4,6 +4,7 @@ namespace App\Http;
 
 use App\Http\Middleware\PostMiddleware;
 use App\Http\Middleware\UsuarioMiddleware;
+use App\Http\Middleware\VerificarUsuarioAdminMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -69,6 +70,7 @@ class Kernel extends HttpKernel
         // Nuestro middleware de validación de usuarios. Esto permite que se valide de manera genérica varias rutas.
         // Aquí lo mapeamos a un alias de 'usuarios'.
         'usuarios' => UsuarioMiddleware::class,
-        'posts' => PostMiddleware::class
+        'posts' => PostMiddleware::class,
+        'mi-middleware' => VerificarUsuarioAdminMiddleware::class,
     ];
 }

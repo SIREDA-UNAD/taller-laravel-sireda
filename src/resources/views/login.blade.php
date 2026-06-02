@@ -2,6 +2,8 @@
 
 @section('title', 'Iniciar sesión')
 
+@section('content')
+
 <form action="{{route('login')}}" method="post">
     @csrf
     <h1>Iniciar sesión</h1>
@@ -14,3 +16,5 @@
     <br/>
     <button type="submit">Iniciar sesión</button>
 </form>
+
+@endsection

@@ -3,6 +3,8 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Middleware\VerificarUsuarioAdminMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,6 +55,16 @@ Route::get('/welcome', function () {
 Route::get('/login', [LoginController::class, 'loginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('login.auth');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/register', [RegisterController::class, 'registerForm'])
+    ->name('register')
+    ->middleware([
+        'guest',
+    ]);
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+
+Route::get('/validaciones', [RegisterController::class, 'validaciones'])->name('register.validaciones');
+Route::post('/validaciones', [RegisterController::class, 'validacionesPost'])->name('register.validaciones.store');
 
 // Redirigimos todas las peticiones a / para el login.
 Route::redirect('/', '/login');

@@ -19,4 +19,14 @@ class Post extends Model
         return $this->belongsTo(Usuario::class, 'creado_por');
     }
 
+    public function categoria()
+    {
+        return $this->morphMany(Categoria::class, 'model');
+    }
+
+    // public function categoria()
+    // {
+    //     return $this->belongsTo(Categoria::class, 'categoria_id');
+    // }
+
 }
